@@ -7,12 +7,24 @@
   font-weigh: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .anton-font {
   font-family: "Anton", sans-serif;
 }
 .issamannu-font {
   font-family: "GongGothicMedium";
 }
+.sbaggro-font {
+  font-family: "SBAggroB";
+}
+
 body {
   background-color: #000000;
 }
@@ -22,6 +34,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*main session*/
 .main {
   position: relative;
@@ -349,4 +362,77 @@ body {
   100% {
     clip: rect(67px, 9999px, 122px, 0);
   }
+}
+/*waterisland section*/
+.waterisland-section {
+  min-height: 100vh;
+  position: relative;
+  color: #6bc6dd;
+}
+
+.waterisland-title {
+  margin-top: 100px;
+
+  position: relative; /*이 아이를 relative로 잡아줘야 얘를 기준으로 wave-line 이미지들이 이동*/
+}
+.warterland-title {
+  -webkit-text-stroke: 1px #6bc6dd;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: -30px;
+}
+
+.poolus-title {
+  font-size: 100px;
+}
+.wave-line-1 {
+  width: 100px;
+  position: absolute;
+  top: 10px; /*top 속성은 position 속성과 함께 사용
+  top 을 가준으로 얼마나 밑에 위치시킬건지를 결정*/
+  right: -65px; /*우측 기준으로 얼마나 좌측으로 위치시킬건지 결정, 역시 postion 속성과 함꼐 사용*/
+}
+.wave-line-2 {
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: -65px;
+  overflow: clip;
+}
+
+.waterisland-sentence {
+  color: #6cc7df;
+  font-size: 15px;
+}
+.main-waterIslandbtn {
+  margin-top: 10px;
+}
+.main-waterIslandbtn button {
+  border: none;
+  background-color: #6cc7df;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px;
+}
+.waterisland-img > img {
+  max-width: 100%;
+}
+
+.wayto-romantic-island {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 35px;
+  left: 36%;
+}
+.wayto-romantic-island > p {
+  font-size: 12px;
+  color: #000000;
+  filter: text-shadow(2px 2px 5px #000000);
+  margin-bottom: 5px;
+}
+.wayto-romantic-island > img {
+  width: auto;
+  filter: drop-shadow(2px 2px 5px #000000);
+  height: 40px;
 }
