@@ -1,15 +1,135 @@
-.fullscreen {
-  background-color: #0f0f0f;
-}
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weigh: normal;
+  font-style: normal;
+}
+.anton-font {
+  font-family: "Anton", sans-serif;
+}
+.issamannu-font {
+  font-family: "GongGothicMedium";
+}
+body {
+  background-color: #000000;
+}
 .display-container {
   max-width: 415px;
-  overflow-x: hidden;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
+/*main session*/
 .main {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+}
+.main > video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.sub-title {
+  text-shadow: 2px 2px 5px black;
+}
+.btn-main {
+  position: relative;
+  z-index: 1;
+  text-decoration-line: none;
+  filter: drop-shadow(0px 0px 8px #ffffff);
+}
+.btn-main-waterisland-in {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #6bc6dd;
+  background-color: #000000;
+  width: 98%;
+  height: 100%;
+}
+.btn-main-waterisland-out {
+  position: absolute;
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  background-color: #6bc6dd;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+.btn-main-waterisland-in:hover {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #ffffff;
+  background-color: #55d6f6;
+  width: 98%;
+  height: 100%;
+  transition: 0.3s;
+}
+.btn-main-romanticland-in {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #c62b6b;
+  background-color: #000000;
+  width: 98%;
+  height: 100%;
+}
+.btn-main-romanticland-out {
+  position: absolute;
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  background-color: #c62b6b;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+.btn-main-romanticland-in:hover {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #ffffff;
+  background-color: #e43a81;
+  width: 98%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.btn-main-gardenland-in {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #287e3a;
+  background-color: #000000;
+  width: 98%;
+  height: 100%;
+}
+.btn-main-gardenland-out {
+  position: absolute;
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  background-color: #287e3a;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+.btn-main-gardenland-in:hover {
+  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
+  color: #ffffff;
+  background-color: #29a844;
+  width: 98%;
+  height: 100%;
+  transition: 0.3s;
+}
+.wayto-water-island {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 35px;
+}
+.wayto-water-island > p {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 5px #000000;
+}
+.wayto-water-island > img {
+  width: auto;
+  height: 40px;
+  filter: drop-shadow(2px 2px 5px #000000);
 }
 
 .glitch-wrapper {
@@ -20,31 +140,17 @@
   justify-content: center;
   text-align: center;
   background-color: rgba(33, 33, 33, 0);
-}
-.water-lsland > img {
-  height: 40px;
-}
-.water-lsland > p {
-  font-size: 12px;
-}
-
-.main-btn-water-island {
-  clip-path: polygon(9% 0, 100% 0, 100% 66%, 91% 100%, 0 100%, 0 34%);
-  background-color: black;
-  height: 100%;
-  width: 98%;
+  text-shadow: 2px 2px 5px black;
 }
 
 .glitch {
-  font-family: "Anton", sans-serif;
   position: relative;
   font-size: 100px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   z-index: 1;
-  text-shadow: 2px 5px #000;
 }
 
 .glitch:before {
@@ -243,10 +349,4 @@
   100% {
     clip: rect(67px, 9999px, 122px, 0);
   }
-}
-.navbar {
-  color: white;
-}
-.main {
-  color: white;
 }
