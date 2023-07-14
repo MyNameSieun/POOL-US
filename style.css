@@ -587,7 +587,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.garden-button > button {
+.garden-button button {
   border: none;
   color: #fef5e8;
   background-color: #287e3a;
