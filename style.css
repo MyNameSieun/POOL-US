@@ -401,9 +401,9 @@ body {
 .wave-line-1 {
   width: 100px;
   position: absolute;
-  top: 10px; /*top 속성은 position 속성과 함께 사용
-  top 을 가준으로 얼마나 밑에 위치시킬건지를 결정*/
-  right: -65px; /*우측 기준으로 얼마나 좌측으로 위치시킬건지 결정, 역시 postion 속성과 함꼐 사용*/
+  top: 10px; /* top 속성은 position 속성과 함께 사용
+  top 을 가준으로 얼마나 밑에 위치시킬건지를 결정 */
+  right: -65px; /* 우측 기준으로 얼마나 좌측으로 위치시킬건지 결정, 역시 postion 속성과 함꼐 사용 */
 }
 .wave-line-2 {
   width: 100px;
