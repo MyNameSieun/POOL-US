@@ -409,7 +409,7 @@ body {
   position: absolute;
   bottom: 50px;
   left: -65px;
-  overflow: clip;
+  z-index: -1;
 }
 
 .waterisland-sentence {
