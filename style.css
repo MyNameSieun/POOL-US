@@ -30,10 +30,11 @@ body {
 }
 .display-container {
   max-width: 415px;
-  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
+  min-height: 100vh;
   overflow: hidden;
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 100%, 75);
 }
 
 /*navbar*/

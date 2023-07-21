@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "LOTTERIADDAG";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-LOTTERIADDAG {
+  font-family: "LOTTERIADDAG";
+}
+
+body {
+  background-color: black;
+}
+.display-container {
+  background-color: white;
+  max-width: 415px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0 15px 0 hsla(0, 0%, 100%, 75);
+  background-image: url(./artist_img/waterback.png);
+  background-size: cover;
+}
+
+/*button*/
+.btn-day {
+  width: 415px;
+  background-image: url(./artist_img/waterdiao.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+.btn-day a {
+  text-decoration: none;
+  font-size: 20px;
+  color: inherit; /*부모의 컬러 상속받을 때 사용*/
+}
+.btn_Act {
+  color: white;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  width: 120px;
+}
+.btn_unAct {
+  color: rgb(255, 255, 255, 0.8);
+  border-bottom: 5px solid rgb(0, 0, 0, 0.5);
+  width: 120px;
+}
+/*artist_section*/
+
+.artist-left {
+  position: relative;
+}
+.artist-left img:nth-child(1) {
+  width: 240px;
+  margin-right: 50px;
+}
+.artist-left img:nth-child(2) {
+  width: 180px;
+  position: absolute;
+  top: 201px;
+  right: 38px;
+}
+.artist-left img:nth-child(3) {
+  width: 100px;
+  position: absolute;
+  bottom: 28px;
+  right: 41px;
+}
+
+.artist-right {
+  position: relative;
+}
+.artist-right img:nth-child(1) {
+  width: 240px;
+  margin-left: 50px;
+}
+.artist-right img:nth-child(2) {
+  width: 180px;
+  position: absolute;
+  top: 201px;
+  right: 186px;
+}
+.indent {
+  position: absolute;
+  bottom: 0px;
+}
+
+.artist-right img:nth-child(3) {
+  width: 100px;
+  position: absolute;
+  bottom: 28px;
+  right: 262px;
+}
